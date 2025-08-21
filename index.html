@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оценка качества обслуживания | Service Quality Evaluation</title>
+    <meta name="description" content="Оцените качество обслуживания по вашему обращению. Bilingual service evaluation platform.">
+    <meta name="author" content="Lovable">
+
+    <meta property="og:title" content="Оценка качества обслуживания">
+    <meta property="og:description" content="Оцените качество обслуживания по вашему обращению">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@lovable_dev">
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+
+    <link rel="stylesheet" href="/src/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header с переключателем языков -->
+        <div class="header">
+            <h1 id="page-title" class="page-title">
+                Оцените качество обслуживания по вашему обращению
+            </h1>
+            <div class="language-switcher">
+                <button id="lang-ru" class="lang-button active">RU</button>
+                <span class="lang-separator">|</span>
+                <button id="lang-kz" class="lang-button">KZ</button>
+            </div>
+        </div>
+
+        <!-- Информация об обращении -->
+        <div class="appeal-info">
+            <div class="appeal-grid">
+                <div class="appeal-field">
+                    <dt id="appeal-number-label">Номер обращения</dt>
+                    <dd class="appeal-number">#123456</dd>
+                </div>
+                
+                <div class="appeal-field">
+                    <dt id="submission-date-label">Дата подачи</dt>
+                    <dd>15.07.2025</dd>
+                </div>
+                
+                <div class="appeal-field">
+                    <dt id="completion-date-label">Дата завершения</dt>
+                    <dd>20.07.2025</dd>
+                </div>
+            </div>
+            
+            <div class="appeal-response">
+                <dt id="service-response-label">Ответ службы</dt>
+                <dd>Ваше обращение рассмотрено. Проблема с мусором во дворе решена. Спасибо за обращение.</dd>
+            </div>
+        </div>
+
+        <!-- Форма оценки -->
+        <form id="evaluation-form" class="evaluation-form">
+            <!-- Звёздный рейтинг -->
+            <div class="star-rating">
+                <div class="stars-container">
+                    <svg class="star" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                    </svg>
+                    <svg class="star" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                    </svg>
+                    <svg class="star" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                    </svg>
+                    <svg class="star" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                    </svg>
+                    <svg class="star" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                    </svg>
+                </div>
+                
+                <div id="rating-label" class="rating-label"></div>
+            </div>
+
+            <!-- Поле комментария -->
+            <div class="comment-section">
+                <textarea 
+                    id="comment-textarea" 
+                    class="comment-textarea" 
+                    placeholder="Ваш комментарий…"
+                    maxlength="500"
+                ></textarea>
+                <div id="comment-counter" class="comment-counter">0/500 символов</div>
+            </div>
+
+            <!-- Кнопка отправки -->
+            <div class="submit-section">
+                <button id="submit-button" type="submit" class="submit-button">
+                    <span id="loading-spinner" class="loading-spinner hidden"></span>
+                    Отправить отзыв
+                </button>
+            </div>
+        </form>
+
+        <!-- Сообщения состояний -->
+        <div id="state-message" class="state-message hidden"></div>
+    </div>
+
+    <script src="/src/script.js"></script>
+</body>
+</html>
